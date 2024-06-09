@@ -1,0 +1,69 @@
+Git-hub 基礎　＝＞progitを使ってgitの基礎を勉強
+rubyを使って基本的なコメントを作成
+＜ex>
+irb(main):001:0> "Hello World"
+=> "Hello World"
+irb(main):002:0> puts "Hello World"
+Hello World
+=> nil
+irb(main):003:0> 3+2
+=> 5
+irb(main):004:0> 3*2
+=> 6
+irb(main):005:0> 3**2
+=> 9
+irb(main):006:0> Math.sqrt(9)
+=> 3.0
+irb(main):007:0> a = 3**2
+=> 9
+irb(main):008:0> b=4**2
+=> 16
+irb(main):009:0> Math.sqrt(a+b)
+=> 5.0
+irb(main):010:0> def h
+irb(main):011:1> puts "Hello World!"
+irb(main):012:1> end
+=> :h
+irb(main):013:0> h
+Hello World!
+=> nil
+irb(main):014:0> h()
+Hello World!
+=> nil
+irb(main):015:0> def h(name)
+irb(main):016:1> puts "Hello #{name}!"
+irb(main):017:1> end
+=> :h
+irb(main):018:0> h("Matz")
+Hello Matz!
+=> nil
+irb(main):019:0> def h(name="World")
+irb(main):020:1> puts "Hello #{name.capitalize}!"
+irb(main):021:1> end
+=> :h
+irb(main):022:0> h "chris"
+Hello Chris!
+=> nil
+irb(main):023:0> h
+Hello World!
+=> nil
+irb(main):024:0> class Greeter
+irb(main):025:1> def initialize(name="World")
+irb(main):026:2> @name = name
+irb(main):027:2> end
+irb(main):028:1> def say_hi
+irb(main):029:2> puts "Hi #{@name}!"
+irb(main):030:2> end
+irb(main):031:1> def say_bye
+irb(main):032:2> puts "Bye #{@name}, come back soon."
+irb(main):033:2> end
+irb(main):034:1> end
+=> :say_bye
+irb(main):035:0> g = Greeter.new("Path")
+=> #<Greeter:0x0000000005631898 @name="Path">
+irb(main):036:0> g.say_hi
+Hi Path!
+=> nil
+irb(main):037:0> g.say_bye
+Bye Path, come back soon.
+=> nil
